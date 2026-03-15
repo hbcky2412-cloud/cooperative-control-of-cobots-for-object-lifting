@@ -7,7 +7,7 @@ L_obj = 0.2; % Chiều dài vật
 
 % --- QUAN TRỌNG: Khoảng cách giữa 2 chân đế ---
 % Vì gốc đặt tại chân Robot 1 (0,0). Robot 2 nằm trên trục X.
-Base_Dist = 2.0; % <--- BẠN HÃY SỬA SỐ NÀY ĐÚNG VỚI MÔ HÌNH CỦA BẠN (Ví dụ 1m, 1.5m hay 2m)
+Base_Dist = 2.0; % 
 
 % --- VỊ TRÍ VẬT BAN ĐẦU (Start_Val trong Simulink) ---
 % Ví dụ vật nằm giữa 2 robot, cao 1m
@@ -37,9 +37,6 @@ yt2 = yc_start + (L_obj/2) * sin(th_start);
 % CHUYỂN TRỤC: Tọa độ của điểm kẹp 2 so với chân đế Robot 2
 x_local2 = xt2 - Base_Dist; 
 y_local2 = yt2;
-
-% Lưu ý: Vì robot 2 "duỗi ngược lại" (với sang trái), x_local2 sẽ âm.
-% Hàm IK tổng quát vẫn giải đúng trường hợp này.
 [q3_init, q4_init, err2] = solve_IK_2link(x_local2, y_local2, l1, l2, 'ElbowUp');
 
 % ================= 4. XUẤT KẾT QUẢ =================
