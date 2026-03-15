@@ -1,5 +1,5 @@
 # cooperative-control-of-cobots-for-object-lifting
-Mathematical modeling and simulation of a dynamic system for control engineering analysis.
+Cooperative control and dynamic modeling of two collaborative robots lifting a heavy object with motion and force coordination.
 # Cooperative Control of Cobots for Object Lifting
 
 This project studies the coordinated control of multiple collaborative robots (cobots) for lifting and manipulating a heavy object. The objective is to design a control strategy that allows multiple robots to work together safely and efficiently.
